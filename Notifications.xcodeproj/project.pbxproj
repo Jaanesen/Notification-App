@@ -85,6 +85,7 @@
 		82DF3B68252357FE00507C81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82DF3B6A252357FE00507C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82DF3B6B252357FE00507C81 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		82DF3B7925236A8100507C81 /* Notifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notifications.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +129,7 @@
 		82DF3B3D252357FA00507C81 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				82DF3B7925236A8100507C81 /* Notifications.entitlements */,
 				82DF3B3E252357FA00507C81 /* NotificationsApp.swift */,
 				82DF3B40252357FA00507C81 /* ContentView.swift */,
 				82DF3B42252357FC00507C81 /* Assets.xcassets */,
@@ -547,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notifications/Notifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Notifications/Preview Content\"";
 				DEVELOPMENT_TEAM = 2LC65W424L;
@@ -570,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notifications/Notifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Notifications/Preview Content\"";
 				DEVELOPMENT_TEAM = 2LC65W424L;
