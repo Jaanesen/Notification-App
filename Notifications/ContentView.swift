@@ -25,6 +25,8 @@ struct ContentView: View {
     }
 }
 
+// MARK: - Action Notification
+
 func SendActionNotification(timeInterval: Double) {
     // Define the custom actions.
     let firstAction = UNNotificationAction(identifier: "FIRST_ACTION",
@@ -74,6 +76,8 @@ func SendActionNotification(timeInterval: Double) {
     return
 }
 
+// MARK: - Normal Notification
+
 func SendNormalNotification(timeInterval: Double) {
     // Create the content
     let content = UNMutableNotificationContent()
@@ -101,6 +105,8 @@ func SendNormalNotification(timeInterval: Double) {
     }
     return
 }
+
+// MARK: - Notification Authorization
 
 func NotificationHandler() {
     let center = UNUserNotificationCenter.current()

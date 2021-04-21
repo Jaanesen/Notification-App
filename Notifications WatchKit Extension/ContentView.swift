@@ -23,6 +23,8 @@ struct ContentView: View {
     }
 }
 
+// MARK: - Normal Notification
+
 func SendNormalNotification(timeInterval: Double) {
     let content = UNMutableNotificationContent()
     content.title = "Test notification"
@@ -51,6 +53,8 @@ func SendNormalNotification(timeInterval: Double) {
     
     return
 }
+
+// MARK: - Notification Handler
 
 func NotificationHandler() {
     let center = UNUserNotificationCenter.current()
